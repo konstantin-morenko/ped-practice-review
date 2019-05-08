@@ -53,8 +53,8 @@
    ввести новую форму отзыва, немного изменив всего один пункт.  Как
    проконтролировать, что все используют именно новую форму?
    Объяснять сущность изменений бывает трудно, а числа в номерах
-   версий всегда просты и понятны.  Я использую [семантическое
-   версионирование](https://semver.org)
+   версий всегда просты и понятны.  Я использую [[https://semver.org][семантическое
+   версионирование]].
 
 2. Разделил отзыв на разделы
 
@@ -162,6 +162,6 @@
   :CUSTOM_ID: files
   :END:
 
-- [odt](ped-practice-review.odt)
-- [docx](ped-practice-review.docx)
-- [pdf](ped-practice-review.pdf)
+- [[file:ped-practice-review.odt][odt]]
+- [[file:ped-practice-review.docx][docx]]
+- [[file:ped-practice-review.pdf][pdf]]
