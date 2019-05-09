@@ -2,8 +2,9 @@
 SOURCE_NAME = ped-practice-review
 SOURCE_FILE = $(SOURCE_NAME).odt
 BUILD_FILES = $(SOURCE_NAME).pdf $(SOURCE_NAME).docx
+DOC_FILE = index.html
 
-all: $(BUILD_FILES) index.md
+all: $(BUILD_FILES) $(DOC_FILE)
 
 
 $(BUILD_FILES): $(SOURCE_FILE)
@@ -11,7 +12,7 @@ $(BUILD_FILES): $(SOURCE_FILE)
 	libreoffice --convert-to $(subst $(SOURCE_NAME).,,$@) $<
 
 clean:
-	rm $(BUILD_FILES) index.md
+	rm $(BUILD_FILES) $(DOC_FILE)
 
-index.md: README.org
-	emacs --batch --exec "(progn (find-file \"$(<)\") (org-md-export-to-markdown))"
+ $(DOC_FILE): README.org
+	emacs --batch --exec "(progn (find-file \"$(<)\") (org-html-export-to-html))"
