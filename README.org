@@ -37,13 +37,6 @@
   :CUSTOM_ID: changelog
   :END:
 
-** Доработать
-   :PROPERTIES:
-   :CUSTOM_ID: issues
-   :END:
-
-- [ ] Добавить пояснения о заполнении отзыва на оборотную сторону
-
 ** v. 1.0.0
    :PROPERTIES:
    :CUSTOM_ID: v1.0.0
