@@ -14,5 +14,5 @@ $(BUILD_FILES): $(SOURCE_FILE)
 clean:
 	rm $(BUILD_FILES) $(DOC_FILE)
 
- $(DOC_FILE): README.org
+$(DOC_FILE): README.org
 	emacs --batch --exec "(progn (find-file \"$(<)\") (org-html-export-to-html))"
